@@ -27,10 +27,6 @@ Screenshot Profile Page
  GitHub : [@chaw-bot](https://github.com/chaw-bot)
  LinkedIn : []()
 
-
-
-
-
 ***👤Alexander Mayowa Odufuye***
 
  GitHub : [@alexander16108](https://github.com/alexander16108)
