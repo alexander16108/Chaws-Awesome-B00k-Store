@@ -64,20 +64,19 @@ function addBook() {
   }
 }
 function removebook(id) { // eslint-disable-line no-unused-vars
-  const temp = [];
+  const template = [];
   Library.forEach((content) => {
     if (content.id !== id) {
       temp.push(content);
     }
   });
-  Library = temp;
+  Library = template;
   updateLocalStorage(true);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const btnAdd = document.getElementById('add-btn');
   btnAdd.addEventListener('click', () => { addBook(); },
-    false,
-  );
+    false,);
 });
 updateLocalStorage(false);
