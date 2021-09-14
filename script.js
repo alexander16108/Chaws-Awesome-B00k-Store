@@ -67,7 +67,7 @@ function removebook(id) { // eslint-disable-line no-unused-vars
   const template = [];
   Library.forEach((content) => {
     if (content.id !== id) {
-      temp.push(content);
+      template.push(content);
     }
   });
   Library = template;
@@ -77,6 +77,6 @@ function removebook(id) { // eslint-disable-line no-unused-vars
 document.addEventListener('DOMContentLoaded', () => {
   const btnAdd = document.getElementById('add-btn');
   btnAdd.addEventListener('click', () => { addBook(); },
-    false,);
+    false);
 });
 updateLocalStorage(false);
