@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Book Shelf</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="title">Awesome Books Tracker</h1>
+
+    <section id="bookList">
+      <!-- <ul id="collection" class="collection"></ul> -->
+    </section>
+
+    <section id="add_book">
+      <h1 class="title">Add a new book</h1>
+      <form id="bookAdderForm">
+        <input class="add-text" type="text" name="title" id="title" placeholder="Title" />
+        <input class="add-author" type="text" name="author" id="author" placeholder="Author" />
+        <button class="btn-add" id="add-btn">Add</button>
+        <p id="addBookStatus"></p>
+      </form>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
