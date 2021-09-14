@@ -1,0 +1,21 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+li {
+  list-style: none;
+  padding: 6px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+form {
+  padding: 20px;
+}
