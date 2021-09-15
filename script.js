@@ -25,7 +25,9 @@ class BookStore {
     if (title === '' || author === '') {
       message.className = 'alert';
       message.textContent = 'Add a book';
-      message.style.background = 'red';
+      message.style.background = 'white';
+      message.style.color = 'red';
+
       bookList.appendChild(message);
       setTimeout(() => {
         document.querySelector('.alert').remove();
@@ -44,11 +46,12 @@ class BookStore {
 
       message.className = 'alert';
       message.textContent = `You've added a book!`;
-      message.style.background = 'green';
+      message.style.color = 'green';
+      message.style.background = 'white';
       bookList.appendChild(message);
-      setTimeout(() => {
-        document.querySelector('.alert').remove();
-      }, 3000);
+      // setTimeout(() => {
+      //   document.querySelector('.alert').remove();
+      // }, 3000);
 
       // clear the form
       title.value = '';
@@ -62,7 +65,8 @@ class BookStore {
 		const message = document.createElement('div');
 		message.className = 'alert';
 		message.textContent = 'Book has been removed';
-		message.style.background = 'green';
+		message.style.color = 'red';
+		message.style.background = 'white';
 		bookList.appendChild(message);
 		      setTimeout(() => {
         document.querySelector('.alert').remove();
