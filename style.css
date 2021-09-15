@@ -32,3 +32,8 @@ form {
 .alert {
   border:1px solid;
 }
+
+.remove {
+  float: right;
+  margin-top: 3px;
+}
