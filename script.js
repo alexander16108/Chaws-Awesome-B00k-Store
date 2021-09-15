@@ -3,7 +3,7 @@ class BookStore {
     this.books = [];
   }
 
-  addBook() {
+  addBook(e) {
     const arr = [];
     this.book = arr;
     const title = document.getElementById('title').value;
@@ -13,22 +13,35 @@ class BookStore {
       title,
       author,
     };
+    
+    if(title === '' || author === '') {
+      const bookList = document.querySelector('#bookList');
+      const message = document.createElement('div');
+      message.className = 'alert';
+      message.textContent = 'Add a book';
+      message.style.color = 'red';
+      bookList.appendChild(message);
+      setTimeout(() => {
+        document.querySelector('.alert').remove();
+      }, 3000);
+    } else {
+      // add books to the array
+      arr.push(book);
+      // get the current books from local storage
+      const currentBooks = JSON.parse(localStorage.getItem('books'));
 
-    // add books to the array
-    arr.push(book);
+      // add the new book to the array
+      currentBooks.push(book);
 
-    // get the current books from local storage
-    const currentBooks = JSON.parse(localStorage.getItem('books'));
+      // add the new books to local storage
+      localStorage.setItem('books', JSON.stringify(currentBooks));
 
-    // add the new book to the array
-    currentBooks.push(book);
+      // clear the form
+      title.value = '';
+      author.value = '';
+    }
 
-    // add the new books to local storage
-    localStorage.setItem('books', JSON.stringify(currentBooks));
-
-    // clear the form
-    title.value = '';
-    author.value = '';
+    e.preventDefault();
   }
 
   removeBook(index) {
