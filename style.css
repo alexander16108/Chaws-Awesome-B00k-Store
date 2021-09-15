@@ -22,8 +22,13 @@ form {
 
 .collection {
   border: 1px solid black;
+  margin: 5%;
 }
 
 .item:nth-child(even) {
   background-color: #d3d3d3;
+}
+
+.alert {
+  border:1px solid;
 }
