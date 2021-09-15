@@ -11,7 +11,7 @@ class BookStore {
         // create a new book class to hold multiple values
         const book = {
             title,
-            author
+            author,
         }
 
         // add books to the array
@@ -32,15 +32,15 @@ class BookStore {
     }
 
     removeBook(index) {
-        let arr = [];
+        const arr = [];
         this.book = arr;
         arr.splice(index, 1);
         localStorage.setItem('books', JSON.stringify(arr));
     }
 
     displayBooks() {
-        let arr = [];
-        let bookStore = new BookStore()
+        const arr = [];
+        const bookStore = new BookStore()
         this.book = arr;
         // check if there are any books in local storage
         if (localStorage.getItem('books') === null) {
@@ -62,7 +62,7 @@ class BookStore {
             removeButton.classList.add('remove');
             removeButton.innerHTML = 'Remove';
             removeButton.addEventListener('click', () => bookStore.removeBook(
-                bookElement.remove()
+                bookElement.remove(),
             ));
 
             bookElement.appendChild(removeButton);
