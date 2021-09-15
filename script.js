@@ -1,7 +1,7 @@
 class BookStore {
-  constructor() {
-    this.books = [];
-  }
+	constructor() {
+		this.books = [];
+	}
 
   addBook(e) {
     const arr = [];
@@ -44,44 +44,43 @@ class BookStore {
     e.preventDefault();
   }
 
-  removeBook(index) {
-    const arr = [];
-    this.book = arr;
-    arr.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(arr));
-  }
+	removeBook(index) {
+		const arr = [];
+		this.book = arr;
+		arr.splice(index, 1);
+		localStorage.setItem('books', JSON.stringify(arr));
+	}
 
-  displayBooks() {
-    let arr = [];
-    const bookStore = new BookStore();
-    this.book = arr;
-    // check if there are any books in local storage
-    if (localStorage.getItem('books') === null) {
-      // if there are no books in local storage create an empty array
-      localStorage.setItem('books', JSON.stringify([]));
-    } else {
-      arr = JSON.parse(localStorage.getItem('books'));
-    }
-    const booksList = document.getElementById('collection');
+	displayBooks() {
+		let arr = [];
+		const bookStore = new BookStore();
+		this.book = arr;
+		// check if there are any books in local storage
+		if (localStorage.getItem('books') === null) {
+			// if there are no books in local storage create an empty array
+			localStorage.setItem('books', JSON.stringify([]));
+		} else {
+			arr = JSON.parse(localStorage.getItem('books'));
+		}
+		const booksList = document.getElementById('collection');
 
-    booksList.innerHTML = '';
+		booksList.innerHTML = '';
 
-    arr.forEach((book) => {
-      const bookElement = document.createElement('li');
-      bookElement.classList.add('item');
-      bookElement.innerHTML = `"${book.title}" by ${book.author}`;
-
-      const removeButton = document.createElement('button');
-      removeButton.classList.add('remove');
-      removeButton.innerHTML = 'Remove';
-      removeButton.addEventListener('click', () => bookStore.removeBook(
-        bookElement.remove(),
-      ));
-
-      bookElement.appendChild(removeButton);
-      booksList.appendChild(bookElement);
-    });
-  }
+		arr.forEach((book) => {
+			const bookElement = document.createElement('li');
+			bookElement.classList.add('item');
+			bookElement.innerHTML = `"${book.title}" by ${book.author}`;
+			const line = document.createElement('hr');
+			const removeButton = document.createElement('button');
+			removeButton.classList.add('remove');
+			removeButton.innerHTML = 'Remove';
+			removeButton.addEventListener('click', () => bookStore.removeBook(
+				bookElement.remove(),
+			));
+			bookElement.append(removeButton, line);
+			booksList.appendChild(bookElement);
+		});
+	}
 }
 
 const bookStore = new BookStore();
