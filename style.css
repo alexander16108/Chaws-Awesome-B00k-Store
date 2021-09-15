@@ -43,13 +43,6 @@ form {
   padding: 20px;
 }
 
-.line {
-  color: black;
-  border: 1px solid black;
-  width: 40%;
-  margin: auto;
-}
-
 #bookAdderForm {
   padding: 10px 0;
   display: flex;
@@ -102,5 +95,8 @@ input {
 }
 
 hr {
+  color: black;
+  border: 1px solid black;
   width: 40%;
+  margin: auto;
 }
