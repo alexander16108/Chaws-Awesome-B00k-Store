@@ -43,7 +43,8 @@ form {
 .line {
   color: black;
   border: 1px solid black;
-
+  width: 40%;
+  margin: auto;
 }
 
 #bookAdderForm {
