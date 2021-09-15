@@ -18,7 +18,7 @@ Screenshot Profile Page
 
 ### Live Version Link
 
- [Live Version](https://alexander16108.github.io/Awesome-Books)
+ [Live Version](https://alexander16108.github.io/Chaws-Awesome-B00k-Store/)
 
 ### Contributors
 
