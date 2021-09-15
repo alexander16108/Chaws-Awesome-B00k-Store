@@ -14,12 +14,19 @@ class BookStore {
       author,
     };
 
+		const bookList = document.querySelector('#bookList');
+		const message = document.createElement('div');
+		message.className = 'alert';
+		message.textContent = 'book has been added';
+		message.style.color = 'cyan';
+		message.style.textAlign = 'center';
+		bookList.appendChild(message);
+
     if (title === '' || author === '') {
-      const bookList = document.querySelector('#bookList');
-      const message = document.createElement('div');
       message.className = 'alert';
       message.textContent = 'Add a book';
       message.style.color = 'red';
+			message.style.textAlign = 'center'
       bookList.appendChild(message);
       setTimeout(() => {
         document.querySelector('.alert').remove();
@@ -49,6 +56,7 @@ class BookStore {
 		message.className = 'alert';
 		message.textContent = 'Book has been removed';
 		message.style.color = 'green';
+		message.style.textAlign = 'center';
 		bookList.appendChild(message);
 		      setTimeout(() => {
         document.querySelector('.alert').remove();
