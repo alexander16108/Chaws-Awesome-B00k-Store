@@ -48,6 +48,10 @@ input {
   margin: 2px 0;
 }
 
+button {
+  width: 20%;
+  margin-left: 80%;
+}
 
 .alert {
   border:1px solid;
