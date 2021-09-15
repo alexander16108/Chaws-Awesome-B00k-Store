@@ -18,25 +18,19 @@ class BookStore {
 		const message = document.createElement('div');
 		message.className = 'alert';
 		message.textContent = 'book has been added';
-		message.style.color = 'cyan';
+		message.style.color = 'white';
 		message.style.textAlign = 'center';
 		bookList.appendChild(message);
 
     if (title === '' || author === '') {
       message.className = 'alert';
       message.textContent = 'Add a book';
-      message.style.color = 'red';
-			message.style.textAlign = 'center'
+      message.style.background = 'red';
       bookList.appendChild(message);
       setTimeout(() => {
         document.querySelector('.alert').remove();
       }, 3000);
     } else {
-      message.className = 'alert';
-      message.textContent = 'Add a book';
-      message.style.color = 'red';
-      bookList.appendChild(message);
-
       // add books to the array
       arr.push(book);
       // get the current books from local storage
@@ -47,6 +41,14 @@ class BookStore {
 
       // add the new books to local storage
       localStorage.setItem('books', JSON.stringify(currentBooks));
+
+      message.className = 'alert';
+      message.textContent = `You've added a book!`;
+      message.style.background = 'green';
+      bookList.appendChild(message);
+      setTimeout(() => {
+        document.querySelector('.alert').remove();
+      }, 3000);
 
       // clear the form
       title.value = '';
@@ -60,8 +62,7 @@ class BookStore {
 		const message = document.createElement('div');
 		message.className = 'alert';
 		message.textContent = 'Book has been removed';
-		message.style.color = 'green';
-		message.style.textAlign = 'center';
+		message.style.background = 'green';
 		bookList.appendChild(message);
 		      setTimeout(() => {
         document.querySelector('.alert').remove();
