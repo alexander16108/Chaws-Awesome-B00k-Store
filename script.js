@@ -71,7 +71,7 @@ class BookStore {
     }
 }
 
-const bookStore = new BookStore()
+const bookStore = new BookStore();
 
 // add a book to the array when the button is clicked
 document.getElementById('add-btn').addEventListener('click', bookStore.addBook);
