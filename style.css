@@ -23,6 +23,7 @@ form {
 
 .collection {
   border: 1px solid black;
+  margin: 5%;
 }
 
 .item:nth-child(even) {
@@ -48,3 +49,6 @@ input {
 }
 
 
+.alert {
+  border:1px solid;
+}

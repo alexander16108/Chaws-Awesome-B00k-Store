@@ -32,6 +32,11 @@ class BookStore {
         document.querySelector('.alert').remove();
       }, 3000);
     } else {
+      message.className = 'alert';
+      message.textContent = 'Add a book';
+      message.style.color = 'red';
+      bookList.appendChild(message);
+
       // add books to the array
       arr.push(book);
       // get the current books from local storage
@@ -86,7 +91,6 @@ class BookStore {
       const bookElement = document.createElement('li');
       bookElement.classList.add('item');
       bookElement.innerHTML = `"${book.title}" by ${book.author}`;
-      // const line = document.createElement('hr');
       const removeButton = document.createElement('button');
       removeButton.classList.add('remove');
       removeButton.innerHTML = 'Remove';
