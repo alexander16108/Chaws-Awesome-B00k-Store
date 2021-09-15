@@ -27,8 +27,8 @@ class BookStore {
         localStorage.setItem('books', JSON.stringify(currentBooks));
 
         // clear the form
-        title.value = '';
-        author.value = '';
+        title.value;
+        author.value;
     }
 
     removeBook(index) {
@@ -39,7 +39,7 @@ class BookStore {
     }
 
     displayBooks() {
-        const arr = [];
+        let arr = [];
         const bookStore = new BookStore()
         this.book = arr;
         // check if there are any books in local storage
