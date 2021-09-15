@@ -57,6 +57,7 @@ input {
   padding: 5px;
   box-shadow: 1px 2px 3px black;
 }
+
 #title,
 #author {
   margin: 3px 0;
@@ -70,12 +71,13 @@ input {
 }
 
 .remove {
-   float: right;
   background-color: white;
   box-shadow: 1px 2px 3px black;
   font-size: 18px;
   padding: 2px;
   border: 2px solid black;
+  float: right;
+  margin-top: 3px;
 }
 
 .btn-add {
@@ -94,13 +96,4 @@ input {
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
-}
-
-.remove {
-  float: right;
-  margin-top: 3px;
-}
-
-hr {
-  width: 40%;
 }
