@@ -40,11 +40,16 @@ class BookStore {
       title.value = '';
       author.value = '';
     }
-
     e.preventDefault();
   }
 
   removeBook(index) {
+		const bookList = document.querySelector('#bookList');
+		const message = document.createElement('div');
+		message.className = 'alert';
+		message.textContent = 'Book has been removed';
+		message.style.color = 'green';
+		bookList.appendChild(message);
     const arr = [];
     this.book = arr;
     arr.splice(index, 1);
@@ -80,6 +85,7 @@ class BookStore {
       bookElement.append(removeButton);
       booksList.appendChild(bookElement);
     });
+
   }
 }
 
