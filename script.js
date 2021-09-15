@@ -59,7 +59,9 @@ const displayBooks = () => {
         const removeButton = document.createElement('button');
         removeButton.classList.add('remove');
         removeButton.innerHTML = 'Remove';
-        removeButton.addEventListener('click', () => removeBook());
+        removeButton.addEventListener('click', () => removeBook(
+            booksList.remove()
+        ));
 
         bookElement.appendChild(removeButton);
         booksList.appendChild(bookElement);
