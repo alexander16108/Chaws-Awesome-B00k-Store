@@ -5,6 +5,10 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+  background-color: rgb(238, 213, 213);
+}
+
 h1 {
   text-align: center;
   padding-bottom: 20px;
@@ -22,8 +26,10 @@ form {
 }
 
 .collection {
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 5%;
+  background-color: white;
+  padding: 5px;
 }
 
 .item:nth-child(even) {
@@ -34,6 +40,12 @@ form {
   padding: 20px;
 }
 
+.line {
+  color: black;
+  border: 1px solid black;
+
+}
+
 #bookAdderForm {
   padding: 10px 0;
   display: flex;
@@ -42,12 +54,12 @@ form {
 
 input {
   padding: 5px;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 1px 2px 3px black;
 }
 #title,
 #author {
   margin: 3px 0;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 #title::placeholder,
@@ -56,13 +68,22 @@ input {
   font-size: 18px;
 }
 
+.remove {
+   float: right;
+  background-color: white;
+  box-shadow: 1px 2px 3px black;
+  font-size: 18px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
 .btn-add {
   width: 20%;
   margin-top:3px;
   margin-left: 80%;
-  border: 1px solid black;
+  border: 2px solid black;
   background-color: white;
-  box-shadow: 1px 2px 2px black;
+  box-shadow: 2px 4px 4px black;
   font-size: 18px;
   padding: 2px;
 }
