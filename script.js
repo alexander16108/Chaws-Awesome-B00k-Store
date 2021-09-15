@@ -50,6 +50,9 @@ class BookStore {
 		message.textContent = 'Book has been removed';
 		message.style.color = 'green';
 		bookList.appendChild(message);
+		      setTimeout(() => {
+        document.querySelector('.alert').remove();
+      }, 3000);
     const arr = [];
     this.book = arr;
     arr.splice(index, 1);
