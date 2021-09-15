@@ -23,13 +23,16 @@ li {
 
 form {
   padding: 20px;
+  width: 50%;
+  margin: auto;
 }
 
 .collection {
   border: 2px solid black;
-  margin: 5%;
+  margin: 30px auto;
   background-color: white;
   padding: 5px;
+  width: 60%;
 }
 
 .item:nth-child(even) {
