@@ -50,10 +50,17 @@ input {
 
 
 .alert {
-  border:1px solid;
+  border: 1px solid;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .remove {
   float: right;
   margin-top: 3px;
+}
+
+hr {
+  width: 40%;
 }
