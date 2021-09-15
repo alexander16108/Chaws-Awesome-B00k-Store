@@ -18,18 +18,20 @@ Screenshot Profile Page
 
 ### Live Version Link
 
- [Live Version](https://alexander16108.github.io/Awesome-Books)
+ [Live Version](https://alexander16108.github.io/Chaws-Awesome-B00k-Store/)
 
 ### Contributors
 
 ***👤 Chawanzi Ng'uni***
 
  GitHub : [@chaw-bot](https://github.com/chaw-bot)
+ 
  LinkedIn : []()
 
 ***👤Alexander Mayowa Odufuye***
 
  GitHub : [@alexander16108](https://github.com/alexander16108)
+ 
  LinkedIn : [Alexander Odufuye]()
 
 ### 🤝 Contributing
