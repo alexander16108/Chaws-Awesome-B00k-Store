@@ -25,11 +25,13 @@ Screenshot Profile Page
 ***👤 Chawanzi Ng'uni***
 
  GitHub : [@chaw-bot](https://github.com/chaw-bot)
+ 
  LinkedIn : []()
 
 ***👤Alexander Mayowa Odufuye***
 
  GitHub : [@alexander16108](https://github.com/alexander16108)
+ 
  LinkedIn : [Alexander Odufuye]()
 
 ### 🤝 Contributing
