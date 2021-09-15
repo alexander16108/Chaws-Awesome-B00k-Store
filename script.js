@@ -45,7 +45,7 @@ class BookStore {
       localStorage.setItem('books', JSON.stringify(currentBooks));
 
       message.className = 'alert';
-      message.textContent = `You've added a book!`;
+      message.textContent = 'You have added a book!';
       message.style.color = 'green';
       message.style.background = 'white';
       bookList.appendChild(message);
@@ -105,7 +105,6 @@ class BookStore {
       bookElement.append(removeButton);
       booksList.appendChild(bookElement);
     });
-
   }
 }
 
