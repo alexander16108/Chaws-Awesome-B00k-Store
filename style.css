@@ -2,6 +2,11 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: rgb(238, 213, 213);
 }
 
 h1 {
@@ -18,4 +23,80 @@ li {
 
 form {
   padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.collection {
+  border: 2px solid black;
+  margin: 30px auto;
+  background-color: white;
+  padding: 5px;
+  width: 60%;
+}
+
+.item:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+#add_book {
+  padding: 20px;
+}
+
+#bookAdderForm {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px;
+  box-shadow: 1px 2px 3px black;
+}
+
+#title,
+#author {
+  margin: 3px 0;
+  border: 2px solid black;
+}
+
+#title::placeholder,
+#author::placeholder {
+  color: black;
+  font-size: 18px;
+}
+
+.remove {
+  float: right;
+  background-color: white;
+  box-shadow: 1px 2px 3px black;
+  font-size: 15px;
+  padding: 3px;
+  border: 2px solid black;
+  margin-top: 3px;
+}
+
+.btn-add {
+  width: 20%;
+  margin-top: 3px;
+  margin-left: 80%;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 2px 4px 4px black;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.alert {
+  border: 1px solid;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+hr {
+  color: black;
+  border: 1px solid black;
+  width: 40%;
+  margin: auto;
 }

@@ -14,12 +14,18 @@ class BookStore {
       author,
     };
 
+    const bookList = document.querySelector('#bookList');
+    const message = document.createElement('div');
+    message.className = 'alert';
+    message.textContent = 'book has been added';
+    message.style.color = 'white';
+    message.style.textAlign = 'center';
+    bookList.appendChild(message);
+
     if (title === '' || author === '') {
-      const bookList = document.querySelector('#bookList');
-      const message = document.createElement('div');
       message.className = 'alert';
       message.textContent = 'Add a book';
-      message.style.color = 'red';
+      message.style.background = 'red';
       bookList.appendChild(message);
       setTimeout(() => {
         document.querySelector('.alert').remove();
@@ -36,15 +42,32 @@ class BookStore {
       // add the new books to local storage
       localStorage.setItem('books', JSON.stringify(currentBooks));
 
+      message.className = 'alert';
+      message.textContent = 'You have added a book!';
+      message.style.color = 'green';
+      message.style.background = 'white';
+      bookList.appendChild(message);
+      setTimeout(() => {
+        document.querySelector('.alert').remove();
+      }, 3000);
+
       // clear the form
       title.value = '';
       author.value = '';
     }
-
     e.preventDefault();
   }
 
   removeBook(index) {
+    const bookList = document.querySelector('#bookList');
+    const message = document.createElement('div');
+    message.className = 'alert';
+    message.textContent = 'Book has been removed';
+    message.style.background = 'green';
+    bookList.appendChild(message);
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
     const arr = [];
     this.book = arr;
     arr.splice(index, 1);
@@ -70,14 +93,13 @@ class BookStore {
       const bookElement = document.createElement('li');
       bookElement.classList.add('item');
       bookElement.innerHTML = `"${book.title}" by ${book.author}`;
-      const line = document.createElement('hr');
       const removeButton = document.createElement('button');
       removeButton.classList.add('remove');
       removeButton.innerHTML = 'Remove';
       removeButton.addEventListener('click', () => bookStore.removeBook(
         bookElement.remove(),
       ));
-      bookElement.append(removeButton, line);
+      bookElement.append(removeButton);
       booksList.appendChild(bookElement);
     });
   }
