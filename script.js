@@ -14,13 +14,13 @@ class BookStore {
       author,
     };
 
-		const bookList = document.querySelector('#bookList');
-		const message = document.createElement('div');
-		message.className = 'alert';
-		message.textContent = 'book has been added';
-		message.style.color = 'white';
-		message.style.textAlign = 'center';
-		bookList.appendChild(message);
+    const bookList = document.querySelector('#bookList');
+    const message = document.createElement('div');
+    message.className = 'alert';
+    message.textContent = 'book has been added';
+    message.style.color = 'white';
+    message.style.textAlign = 'center';
+    bookList.appendChild(message);
 
     if (title === '' || author === '') {
       message.className = 'alert';
@@ -58,15 +58,15 @@ class BookStore {
   }
 
   removeBook(index) {
-		const bookList = document.querySelector('#bookList');
-		const message = document.createElement('div');
-		message.className = 'alert';
-		message.textContent = 'Book has been removed';
-		message.style.background = 'green';
-		bookList.appendChild(message);
-		      setTimeout(() => {
-        document.querySelector('.alert').remove();
-      }, 3000);
+    const bookList = document.querySelector('#bookList');
+    const message = document.createElement('div');
+    message.className = 'alert';
+    message.textContent = 'Book has been removed';
+    message.style.background = 'green';
+    bookList.appendChild(message);
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
     const arr = [];
     this.book = arr;
     arr.splice(index, 1);
