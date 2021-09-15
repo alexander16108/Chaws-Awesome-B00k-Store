@@ -57,15 +57,14 @@ class BookStore {
       const bookElement = document.createElement('li');
       bookElement.classList.add('item');
       bookElement.innerHTML = `"${book.title}" by ${book.author}`;
-
       const removeButton = document.createElement('button');
       removeButton.classList.add('remove');
       removeButton.innerHTML = 'Remove';
       removeButton.addEventListener('click', () => bookStore.removeBook(
         bookElement.remove(),
       ));
-
-      bookElement.appendChild(removeButton);
+			const line = document.createElement('hr');
+      bookElement.append(removeButton, line);
       booksList.appendChild(bookElement);
     });
   }

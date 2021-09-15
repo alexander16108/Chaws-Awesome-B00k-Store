@@ -9,6 +9,16 @@ h1 {
   padding-bottom: 20px;
 }
 
+ul {
+  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+}
+
 li {
   list-style: none;
   padding: 6px;
