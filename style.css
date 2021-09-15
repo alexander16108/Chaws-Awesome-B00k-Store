@@ -19,3 +19,11 @@ li {
 form {
   padding: 20px;
 }
+
+.collection {
+  border: 1px solid black;
+}
+
+.item:nth-child(even) {
+  background-color: #d3d3d3;
+}
