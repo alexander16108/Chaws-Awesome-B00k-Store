@@ -76,6 +76,7 @@ a:hover {
 }
 
 .horizontal {
+  padding: 0%;
   transform: rotate(180deg);
   border: 1px solid black;
   height: 100%;

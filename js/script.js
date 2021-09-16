@@ -60,6 +60,7 @@ class BookStore {
     e.preventDefault();
   }
 
+  /* eslint-disable */
   removeBook(index) {
     const bookList = document.querySelector('#bookList');
     const message = document.createElement('div');
@@ -75,6 +76,8 @@ class BookStore {
     currentBooks.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(currentBooks));
   }
+  
+/* eslint-enable */
 
   displayBooks() {
     let arr = [];
