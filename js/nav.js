@@ -1,10 +1,9 @@
-const list = document.querySelector('.list'),
-  add = document.querySelector('.add'),
-  contact = document.querySelector('.navContact'),
-  listSec = document.querySelector('#bookList'),
-  addSec = document.querySelector('#add_book'),
-  contactSec = document.querySelector('#contact'),
-  date = document.querySelector('.date');
+const list = document.querySelector('.list');
+const add = document.querySelector('.add');
+const contact = document.querySelector('.navContact');
+const listSec = document.querySelector('#bookList');
+const addSec = document.querySelector('#add_book');
+const contactSec = document.querySelector('#contact');
 
 // display list section
 function displayList() {
