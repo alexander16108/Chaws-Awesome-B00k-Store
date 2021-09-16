@@ -65,7 +65,7 @@ a {
   color: black;
 }
 
-a:active {
+a:hover {
   color: blue;
 }
 
