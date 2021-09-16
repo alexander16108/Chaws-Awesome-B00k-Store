@@ -76,8 +76,8 @@ class BookStore {
     currentBooks.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(currentBooks));
   }
-  
-/* eslint-enable */
+
+  /* eslint-enable */
 
   displayBooks() {
     let arr = [];
