@@ -11,23 +11,50 @@
 
 <body>
   <main>
-    <h1 class="title">Awesome Books Tracker</h1>
+  <header>
+    <nav>
+      <p class="text">Awesome Books</p>
+      <ul class="nav-list">
+        <li><a href="#bookList">List</a></li>
+        <hr class="horizontal">
+        <li><a href="#add_book">Add New</a></li>
+        <hr class="horizontal">
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="date"></div>
+  </header>
+   
 
     <section id="bookList">
+      <h1 class="title">Awesome Books Tracker</h1>
       <ul id="collection" class="collection"></ul>
     </section>
   
     <hr>
 
     <section id="add_book">
-      <h1 class="title">Add a new book</h1>
-      <form id="bookAdderForm">
+      <h2 class="title">Add a new book</h2>
+      <form id="bookAdderForm" class="bookAdder">
         <input class="add-text" type="text" name="title" id="title" placeholder="Title" />
         <input class="add-author" type="text" name="author" id="author" placeholder="Author" />
         <button class="btn-add" id="add-btn">Add</button>
         <p id="addBookStatus"></p>
       </form>
     </section>
+    <section class="contact" id="#contact">
+      <h2>Contact Information</h2>
+      <p class="outro">Do you have any questions or you just want to say "hello"? </p>
+      <p> you can reach out to us at. </p>
+      <ul>
+        <li>Our Email : templateEmail@microverse.com</li>
+        <li>Our Contact : 0023478927</li>
+        <li>Our Address : St matthew way, Leipzig, Germany</li>
+      </ul>
+    </section>
+    <footer>
+      <p class="copyright"> Written by Chaw and Alexander</p>
+    </footer>
   </main>
   <script src="./script.js"></script>
 </body>

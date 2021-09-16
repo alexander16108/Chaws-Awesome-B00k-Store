@@ -1,17 +1,30 @@
+  
+@import url("https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap");
+
 * {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Bubbler One", sans-serif;
+    font-weight: 600;
+  }
 
 body {
   background-color: rgb(238, 213, 213);
 }
 
 h1 {
+  padding: 0%;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
   text-align: center;
   padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 li {
@@ -19,6 +32,52 @@ li {
   padding: 6px;
   font-size: 22px;
   font-weight: 400;
+}
+
+p {
+  padding: 4px;
+  text-transform: lowercase;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 0%;
+  border: 1px solid black;
+}
+
+.text {
+  align-self: center;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 6vh;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: blue;
+}
+
+.horizontal {
+  transform: rotate(180deg);
+  height: 100%;
+  color: black;
+  width: 0%;
+}
+
+.date {
+  padding: 20px;
+  text-align: end;
 }
 
 form {
@@ -39,11 +98,7 @@ form {
   background-color: #d3d3d3;
 }
 
-#add_book {
-  padding: 20px;
-}
-
-#bookAdderForm {
+.bookAdder {
   padding: 10px 0;
   display: flex;
   flex-direction: column;
@@ -54,14 +109,15 @@ input {
   box-shadow: 1px 2px 3px black;
 }
 
-#title,
-#author {
+.add-text,
+.add-author {
   margin: 3px 0;
   border: 2px solid black;
+  padding: 10px;
 }
 
-#title::placeholder,
-#author::placeholder {
+.add-text::placeholder,
+.add-author::placeholder {
   color: black;
   font-size: 18px;
 }
@@ -80,11 +136,20 @@ input {
   width: 20%;
   margin-top: 3px;
   margin-left: 80%;
-  border: 2px solid black;
   background-color: white;
   box-shadow: 2px 4px 4px black;
   font-size: 18px;
-  padding: 2px;
+  padding: 3px;
+  border: 2px solid black;
+}
+
+footer {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  font-size: 18px;
+  word-spacing: 7px;
+  text-align: center;
 }
 
 .alert {
@@ -99,4 +164,11 @@ hr {
   border: 1px solid black;
   width: 40%;
   margin: auto;
+}
+
+.contact {
+  border: none;
+  margin: 2em;
+  text-align: left;
+  font-size: 20px;
 }
