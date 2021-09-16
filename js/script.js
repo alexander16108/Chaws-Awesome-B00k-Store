@@ -1,3 +1,5 @@
+import { DateTime } from './luxon.js';
+
 class BookStore {
   constructor() {
     this.books = [];
@@ -58,6 +60,7 @@ class BookStore {
     e.preventDefault();
   }
 
+  /* eslint-disable */
   removeBook(index) {
     const bookList = document.querySelector('#bookList');
     const message = document.createElement('div');
@@ -68,11 +71,13 @@ class BookStore {
     setTimeout(() => {
       document.querySelector('.alert').remove();
     }, 3000);
-    const arr = [];
-    this.book = arr;
-    arr.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(arr));
+    const currentBooks = JSON.parse(localStorage.getItem('books'));
+
+    currentBooks.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(currentBooks));
   }
+
+  /* eslint-enable */
 
   displayBooks() {
     let arr = [];
@@ -112,3 +117,11 @@ document.getElementById('add-btn').addEventListener('click', bookStore.addBook);
 
 // create a window.onload event that renders the books to the DOM
 window.onload = bookStore.displayBooks();
+
+// set time and date
+function setTimeDate() {
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+  document.querySelector('.date').innerHTML = now;
+}
+
+setTimeDate();

@@ -2,34 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online Book Shelf</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
   <main>
-    <h1 class="title">Awesome Books Tracker</h1>
+    <header>
+      <nav>
+        <p class="text">Awesome Books</p>
+        <ul class="nav-list">
+          <li><a class="list" href="#bookList">List</a></li>
+          <li class="horizontal"></li>
+          <li><a class="add" href="#add_book">Add New</a></li>
+          <li class="horizontal"></li>
+          <li><a class="navContact" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
 
     <section id="bookList">
+      <h1 class="title">Awesome Books Tracker</h1>
       <ul id="collection" class="collection"></ul>
+      <hr />
     </section>
-  
-    <hr>
 
     <section id="add_book">
-      <h1 class="title">Add a new book</h1>
-      <form id="bookAdderForm">
+      <h2 class="title">Add a new book</h2>
+      <form id="bookAdderForm" class="bookAdder">
         <input class="add-text" type="text" name="title" id="title" placeholder="Title" />
         <input class="add-author" type="text" name="author" id="author" placeholder="Author" />
-        <button class="btn-add" id="add-btn">Add</button>
+        <button class="btn-add" id="add-btn" type="submit">Add</button>
         <p id="addBookStatus"></p>
       </form>
     </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Information</h2>
+      <p class="outro">
+        Do you have any questions or you just want to say "hello"?
+      </p>
+      <p>you can reach out to us at.</p>
+      <ul>
+        <li>Our Email : templateEmail@microverse.com</li>
+        <li>Our Contact : 0023478927</li>
+        <li>Our Address : St matthew way, Leipzig, Germany</li>
+      </ul>
+    </section>
+    <footer>
+      <p class="copyright">
+        <i class="far fa-copyright"></i> Written by Chaw and Alexander
+      </p>
+    </footer>
   </main>
-  <script src="./script.js"></script>
+  <script src="./js/script.js" type="module"></script>
+  <script src="./js/nav.js"></script>
 </body>
 
 </html>
