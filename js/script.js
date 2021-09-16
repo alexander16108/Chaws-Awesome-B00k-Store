@@ -1,3 +1,5 @@
+import { DateTime } from "./luxon.js";
+
 class BookStore {
   constructor() {
     this.books = [];
@@ -112,3 +114,11 @@ document.getElementById('add-btn').addEventListener('click', bookStore.addBook);
 
 // create a window.onload event that renders the books to the DOM
 window.onload = bookStore.displayBooks();
+
+// set time and date
+function setTimeDate() {
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+  document.querySelector('.date').innerHTML = now;
+}
+
+setTimeDate();
