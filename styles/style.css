@@ -13,6 +13,13 @@ body {
   background-color: rgb(238, 213, 213);
 }
 
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h1 {
   padding: 0%;
   font-size: 24px;
@@ -172,4 +179,8 @@ hr {
   margin: 2em;
   text-align: left;
   font-size: 20px;
+}
+
+#add_book, #contact {
+  display: none;
 }
