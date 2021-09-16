@@ -68,10 +68,10 @@ class BookStore {
     setTimeout(() => {
       document.querySelector('.alert').remove();
     }, 3000);
-    const arr = [];
-    this.book = arr;
-    arr.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(arr));
+    const currentBooks = JSON.parse(localStorage.getItem('books'));
+
+    currentBooks.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(currentBooks));
   }
 
   displayBooks() {
