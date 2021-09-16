@@ -5,10 +5,19 @@
 
 
 
-<!-- Screenshot of the page
-![]()
-Screenshot Profile Page
-![]() -->
+## Screenshot of the page
+![image](https://user-images.githubusercontent.com/60612329/133636832-a7a2dd49-211a-4ddf-b969-5eeb47301b7b.png)
+
+![image](https://user-images.githubusercontent.com/60612329/133636886-02d64847-66b6-4be2-b7e4-0e3f690dd790.png)
+
+![image](https://user-images.githubusercontent.com/60612329/133636934-655db769-69db-4fbb-a08b-d33b3edb67be.png)
+
+
+
+### Live Version Link
+
+ [Live Version](https://alexander16108.github.io/Chaws-Awesome-B00k-Store/)
+
 
 ### Build With
  - HTML
@@ -16,9 +25,6 @@ Screenshot Profile Page
  - CSS
 
 
-### Live Version Link
-
- [Live Version](https://alexander16108.github.io/Chaws-Awesome-B00k-Store/)
 
 ### Contributors
 
