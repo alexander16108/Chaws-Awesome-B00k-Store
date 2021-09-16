@@ -6,8 +6,8 @@ class BookStore {
   addBook(e) {
     const arr = [];
     this.book = arr;
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
+    let title = document.getElementById('title').value;
+    let author = document.getElementById('author').value;
     // create a new book class to hold multiple values
     const book = {
       title,
@@ -70,8 +70,9 @@ class BookStore {
     }, 3000);
     const arr = [];
     this.book = arr;
-    arr.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(arr));
+    const currentBooks = JSON.parse(localStorage.getItem('books'));
+    currentBooks.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(currentBooks));
   }
 
   displayBooks() {
@@ -107,6 +108,7 @@ class BookStore {
 
 const bookStore = new BookStore();
 
+console.log(bookStore);
 // add a book to the array when the button is clicked
 document.getElementById('add-btn').addEventListener('click', bookStore.addBook);
 
