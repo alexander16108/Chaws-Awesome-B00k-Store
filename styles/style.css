@@ -9,10 +9,19 @@
 }
 
 body {
-  background-color: rgb(238, 213, 213);
+  background-image: url(https://images.unsplash.com/photo-1530669244764-0909211cd8e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHxyZWR8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -35,6 +44,7 @@ h2 {
 }
 
 li {
+  color: black;
   list-style: none;
   padding: 6px;
   font-size: 22px;
@@ -50,7 +60,8 @@ nav {
   display: grid;
   grid-template-columns: 40% 60%;
   margin: 1%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.521);
 }
 
 .text {
@@ -95,11 +106,19 @@ form {
 }
 
 .collection {
-  border: 2px solid black;
-  margin: 30px auto;
-  background-color: white;
-  padding: 5px;
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.514);
   width: 60%;
+  padding: 10px;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 70%;
+}
+
+.collection::-webkit-scrollbar {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .item:nth-child(even) {
@@ -120,7 +139,8 @@ input {
 .add-text,
 .add-author {
   margin: 3px 0;
-  border: 2px solid black;
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.466);
   padding: 10px;
 }
 
@@ -132,11 +152,11 @@ input {
 
 .remove {
   float: right;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.336);
   box-shadow: 1px 2px 3px black;
   font-size: 15px;
   padding: 3px;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.726);
   margin-top: 3px;
 }
 
@@ -148,15 +168,16 @@ input {
   box-shadow: 2px 4px 4px black;
   font-size: 18px;
   padding: 3px;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.466);
 }
 
 footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
   margin: 5px;
   font-size: 18px;
   word-spacing: 7px;
+  background-color: rgba(255, 255, 255, 0.562);
   text-align: center;
 }
 
@@ -179,6 +200,7 @@ hr {
   margin: 2em;
   text-align: left;
   font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 #add_book,
