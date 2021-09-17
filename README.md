@@ -47,7 +47,7 @@ After cloning it you can see the project opening the index.html file with your f
  LinkedIn : [Alexander Odufuye]()
 
 ### 🤝 Contributing
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
