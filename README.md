@@ -13,12 +13,11 @@ After cloning it you can see the project opening the index.html file with your f
 
 
 ## Screenshot of the page
-![image](https://user-images.githubusercontent.com/60612329/133636832-a7a2dd49-211a-4ddf-b969-5eeb47301b7b.png)
+![image](https://user-images.githubusercontent.com/60612329/133796514-4ae6b494-b9cf-49a2-b9cb-d8aaa9b1e839.png)
 
-![image](https://user-images.githubusercontent.com/60612329/133636886-02d64847-66b6-4be2-b7e4-0e3f690dd790.png)
+![image](https://user-images.githubusercontent.com/60612329/133796551-eb31bc74-3869-4123-9ae5-9ada77667ad5.png)
 
-![image](https://user-images.githubusercontent.com/60612329/133636934-655db769-69db-4fbb-a08b-d33b3edb67be.png)
-
+![image](https://user-images.githubusercontent.com/60612329/133796577-90e9e6e8-c919-4cb8-82c0-9e5f2561d048.png)
 
 
 ### Live Version Link
